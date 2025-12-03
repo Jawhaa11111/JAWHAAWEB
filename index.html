@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jawhaa Sneakers — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Jawhaa Sneakers</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Premium Sneakers — Fast Shipping</h2>
+        <p>Hand-picked selection of stylish and comfortable sneakers. Browse our collection and add your favorites to the cart.</p>
+        <p><a class="btn" href="products.html">Shop Sneakers</a></p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="feature">
+        <h3>Free Shipping</h3>
+        <p>On orders over $75.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy Returns</h3>
+        <p>30-day money-back guarantee.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure Checkout</h3>
+        <p>Fast and secure payments.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Jawhaa Sneakers</div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    // update cart count on load
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.Cart) Cart.updateCount();
+    });
+  </script>
+</body>
+</html>
