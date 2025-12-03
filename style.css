@@ -1,0 +1,45 @@
+/* Basic reset and layout */
+:root{
+	--accent:#ff6b6b;
+	--dark:#111;
+	--muted:#666;
+	--max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; color:#222; background:#fafafa}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:18px 16px}
+.brand{font-size:20px;margin:0;color:var(--dark)}
+.nav a{margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600}
+.hero{padding:56px 0;background:linear-gradient(180deg,#fff 60%,#f4f4f6)}
+.hero h2{margin:0 0 12px;font-size:28px}
+.hero p{margin:0 0 18px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+
+.features{display:flex;gap:20px;padding:28px 0}
+.feature{flex:1;background:#fff;padding:18px;border-radius:8px;border:1px solid #f0f0f0;text-align:center}
+
+/* Products */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;padding:28px 0}
+.product{background:#fff;border-radius:8px;padding:12px;border:1px solid #eee;display:flex;flex-direction:column}
+.product img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+.product h4{margin:12px 0 6px;font-size:16px}
+.product p.price{margin:0;font-weight:700}
+.product .actions{margin-top:auto;display:flex;gap:8px}
+.product .actions .btn{flex:1;text-align:center}
+
+/* Cart */
+.cart-list{background:#fff;border-radius:8px;padding:16px;border:1px solid #eee}
+.cart-item{display:flex;gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid #fafafa}
+.cart-item:last-child{border-bottom:none}
+.cart-item img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+.cart-summary{background:#fff;padding:16px;border-radius:8px;border:1px solid #eee;margin-top:16px}
+
+footer.site-footer{padding:20px 0;text-align:center;color:var(--muted);margin-top:40px}
+
+@media (max-width:640px){
+	.features{flex-direction:column}
+	.site-header .container{flex-direction:column;gap:12px}
+	.nav a{margin-left:8px}
+}
