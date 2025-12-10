@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sneaker-001",
+    "name": "Cloud Runner 1",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1528701800489-4766b6fbbe4e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c5d3b2d6b9d6b3a3b9f2f6d4b9356a7",
+    "description": "Lightweight running sneaker with breathable mesh and responsive foam." 
+  },
+  {
+    "id": "sneaker-002",
+    "name": "Street Flex",
+    "price": 109.0,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6f7a1af3b6b3a2b8a1d4b7e2c6a9d3f1",
+    "description": "Classic streetwear silhouette with comfortable cushioning and durable sole." 
+  },
+  {
+    "id": "sneaker-003",
+    "name": "Court Classic",
+    "price": 74.5,
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ad3b4c9a7f2d1b3c4e5f6a7b8c9d0e1f",
+    "description": "Timeless court shoe with leather upper and soft lining." 
+  }, {
+    "id": "sneaker-004",
+    "name": "Court Classic",
+    "price": 74.5,
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ad3b4c9a7f2d1b3c4e5f6a7b8c9d0e1f",
+    "description": "Timeless court shoe with leather upper and soft lining." 
+  }, {
+    "id": "sneaker-005",
+    "name": "Court Classic",
+    "price": 74.5,
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ad3b4c9a7f2d1b3c4e5f6a7b8c9d0e1f",
+    "description": "Timeless court shoe with leather upper and soft lining." 
+  }
+]

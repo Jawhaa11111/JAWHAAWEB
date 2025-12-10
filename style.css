@@ -1,0 +1,334 @@
+/* Modern Design System */
+:root{
+  --accent:#1a1a1a;
+  --accent-bright:#ff6b6b;
+  --dark:#0f0f0f;
+  --light:#ffffff;
+  --bg:#f8f8f8;
+  --muted:#666666;
+  --border:#e8e8e8;
+  --max-width:1200px;
+  --shadow:0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg:0 8px 24px rgba(0,0,0,0.12);
+}
+
+*{box-sizing:border-box}
+
+body{
+  font-family:'Segoe UI', Trebuchet MS, sans-serif;
+  margin:0;
+  color:#1a1a1a;
+  background:var(--bg);
+  line-height:1.5;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* Header */
+.site-header{
+  background:var(--light);
+  border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 20px;
+}
+
+.brand{
+  font-size:24px;
+  font-weight:700;
+  margin:0;
+  color:var(--dark);
+  letter-spacing:-0.5px;
+}
+
+.nav{
+  display:flex;
+  gap:24px;
+}
+
+.nav a{
+  color:var(--dark);
+  text-decoration:none;
+  font-weight:500;
+  font-size:14px;
+  transition:color 0.2s;
+  border-bottom:2px solid transparent;
+  padding-bottom:4px;
+}
+
+.nav a:hover{
+  color:var(--accent-bright);
+  border-bottom-color:var(--accent-bright);
+}
+
+/* Hero */
+.hero{
+  padding:60px 0;
+  background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 100%);
+  color:#fff;
+}
+
+.hero h2{
+  margin:0 0 16px;
+  font-size:36px;
+  font-weight:700;
+  letter-spacing:-0.5px;
+}
+
+.hero p{
+  margin:0 0 20px;
+  font-size:16px;
+  opacity:0.85;
+}
+
+/* Button */
+.btn{
+  display:inline-block;
+  background:var(--accent-bright);
+  color:#fff;
+  padding:12px 24px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  transition:all 0.2s;
+  border:none;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#e55555;
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-lg);
+}
+
+.btn:active{
+  transform:translateY(0);
+}
+
+/* Features */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+  padding:40px 0;
+}
+
+.feature{
+  background:var(--light);
+  padding:24px;
+  border-radius:8px;
+  box-shadow:var(--shadow);
+  text-align:center;
+  transition:box-shadow 0.2s;
+}
+
+.feature:hover{
+  box-shadow:var(--shadow-lg);
+}
+
+.feature h3{
+  margin:0 0 8px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.feature p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Kobe History Grid */
+.kobe-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  padding:40px 0;
+}
+
+.kobe-card{
+  background:var(--light);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:all 0.3s;
+}
+
+.kobe-card:hover{
+  box-shadow:var(--shadow-lg);
+  transform:translateY(-4px);
+}
+
+.kobe-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+}
+
+.kobe-card-content{
+  padding:16px;
+}
+
+.kobe-card h4{
+  margin:0 0 8px;
+  font-size:16px;
+  font-weight:600;
+}
+
+.kobe-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+
+/* Products */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:18px;
+  padding:28px 0;
+}
+
+.product{
+  background:var(--light);
+  border-radius:8px;
+  padding:12px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  transition:box-shadow 0.2s;
+}
+
+.product:hover{
+  box-shadow:var(--shadow-lg);
+}
+
+.product img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.product h4{
+  margin:12px 0 6px;
+  font-size:16px;
+}
+
+.product p.price{
+  margin:0;
+  font-weight:700;
+}
+
+.product .actions{
+  margin-top:auto;
+  display:flex;
+  gap:8px;
+}
+
+.product .actions .btn{
+  flex:1;
+  text-align:center;
+}
+
+/* Cart */
+.cart-list{
+  background:var(--light);
+  border-radius:8px;
+  padding:16px;
+  box-shadow:var(--shadow);
+}
+
+.cart-item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:8px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.cart-item:last-child{
+  border-bottom:none;
+}
+
+.cart-item img{
+  width:64px;
+  height:64px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.cart-summary{
+  background:var(--light);
+  padding:16px;
+  border-radius:8px;
+  box-shadow:var(--shadow);
+  margin-top:16px;
+}
+
+/* Footer */
+footer.site-footer{
+  padding:30px 0;
+  text-align:center;
+  color:var(--muted);
+  margin-top:60px;
+  border-top:1px solid var(--border);
+  background:var(--light);
+  font-size:14px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .features{
+    grid-template-columns:1fr;
+  }
+  .site-header .container{
+    flex-direction:column;
+    gap:12px;
+  }
+  .nav{
+    gap:16px;
+  }
+  .nav a{
+    font-size:13px;
+  }
+  .hero h2{
+    font-size:28px;
+  }
+  .kobe-gallery{
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  }
+}
+
+@media (max-width:480px){
+  .container{
+    padding:0 16px;
+  }
+  .hero{
+    padding:40px 0;
+  }
+  .hero h2{
+    font-size:24px;
+  }
+  .nav{
+    gap:12px;
+  }
+  .nav a{
+    font-size:12px;
+  }
+}
